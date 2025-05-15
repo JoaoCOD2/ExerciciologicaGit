@@ -1,23 +1,25 @@
 
 package javaapplication388;
-
-import java.util.Scanner;
-
 public class JavaApplication388 {
 
-    public static void main(String[] args) {
-        Scanner ler = new Scanner (System.in);
-        int n1, n2, conta;
-        
-        System.out.println("Escolha um numero");
-        n1 = ler.nextInt();
-        System.out.println("Escolha outro numero");
-        n2 = ler.nextInt();
-        conta = n1 + n2;
-        
-        System.out.println("O resultado é " + conta);
-        
-        
+    public static boolean numeroPerfeito(int num) {
+        if (num <= 1){
+            return false;
+        }
+     
+        int soma = 0;
+        for (int i = 1; i < num; i++) {
+            if (num % i == 0){
+                soma += i;
+            }
+        }
+        return soma == num;
+    }
+    public static void main (String[] args){
+     System.out.println (numeroPerfeito(28));
+     System.out.println (numeroPerfeito(4));
+     System.out.println (numeroPerfeito(12));
+     System.out.println (numeroPerfeito(6));
     }
     
 }
