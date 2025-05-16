@@ -19,10 +19,11 @@ public class Exercicio04 {
         str = str.toLowerCase();
         
         for (char c : str.toCharArray()){
-            if ("aeiaou".indexOf (c) != -1){
+            if ("aeiaou".indexOf (c) != -1) {
                 contagem ++;
-            }
-        }
+            } 
+        } 
+        //.indexOf foi pesquisado no google.
         return contagem;
     }
     
