@@ -1,4 +1,4 @@
-
+//Atualização commit
 package exercicio10;
 public class Exercicio10 {
  public static boolean ehFibonacci(int n) {
